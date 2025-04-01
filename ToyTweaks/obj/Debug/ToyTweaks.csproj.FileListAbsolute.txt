@@ -1,0 +1,7 @@
+F:\dev\BetterToys\BetterToys\mod\BetterToys.dll
+F:\dev\BetterToys\BetterToys\mod\BetterToys.pdb
+F:\dev\BetterToys\BetterToys\BetterToys\obj\Debug\ToyTweaks.csproj.AssemblyReference.cache
+F:\dev\BetterToys\BetterToys\BetterToys\obj\Debug\ToyTweaks.csproj.CoreCompileInputs.cache
+F:\dev\BetterToys\BetterToys\BetterToys\obj\Debug\ToyTweaks.csproj.CopyComplete
+F:\dev\BetterToys\BetterToys\BetterToys\obj\Debug\BetterToys.dll
+F:\dev\BetterToys\BetterToys\BetterToys\obj\Debug\BetterToys.pdb
