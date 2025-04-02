@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyTweaks", "BetterToys\ToyTweaks.csproj", "{ADB94965-83F8-4DF6-A89C-A4A1137FC0F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyTweaks", "ToyTweaks\ToyTweaks.csproj", "{42E89591-F04F-4E80-B7A4-1B714BAA0111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADB94965-83F8-4DF6-A89C-A4A1137FC0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADB94965-83F8-4DF6-A89C-A4A1137FC0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADB94965-83F8-4DF6-A89C-A4A1137FC0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADB94965-83F8-4DF6-A89C-A4A1137FC0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E89591-F04F-4E80-B7A4-1B714BAA0111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E89591-F04F-4E80-B7A4-1B714BAA0111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E89591-F04F-4E80-B7A4-1B714BAA0111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E89591-F04F-4E80-B7A4-1B714BAA0111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5ACF4F16-D630-4330-91E4-2C2F0515E15A}
+		SolutionGuid = {002BD880-DA3A-4EE3-AD2F-E49C0BC92993}
 	EndGlobalSection
 EndGlobal

@@ -26,6 +26,18 @@ namespace ToyTweaks
                 }
                 else
                 {
+                    if (testObj is UrbanToys.SoftToy)
+                    {
+                        return true;
+                    }
+                    if (testObj is UrbanToys.WeirdToy)
+                    {
+                        return true;
+                    }
+                    if (testObj is UrbanToys.BallToy)
+                    {
+                        return true;
+                    }
                     return result;
                 }
             }
@@ -52,14 +64,18 @@ namespace ToyTweaks
                 {
                     if (obj is UrbanToys.SoftToy)
                     {
-                        return Player.ObjectGrabability.BigOneHand;
+                        return Player.ObjectGrabability.OneHand;
                     }
                     if (obj is UrbanToys.WeirdToy)
                     {
-                        return Player.ObjectGrabability.BigOneHand;
+                        return Player.ObjectGrabability.OneHand;
+                    }
+                    if (obj is UrbanToys.BallToy)
+                    {
+                        return Player.ObjectGrabability.OneHand;
                     }
                     return result;
-                }                
+                }
             }
             else
             {
