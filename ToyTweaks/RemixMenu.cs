@@ -33,6 +33,11 @@ namespace ToyTweaks
 
         public RemixMenu(ToyTweaks toyTweaks)
         {
+            // 总选单
+            keyItemAllToys = config.Bind("ToyTweaks_Bool_KeyItemAllToys", true);
+            customIcons = config.Bind("ToyTweaks_Bool_CustomIcons", true);
+            oneHandAllToys = config.Bind("ToyTweaks_Bool_OneHandAllToys", false);
+            canSwallowAllToy = config.Bind("ToyTweaks_Bool_CanSwallowAllToy", false);
             // 毛绒
             canSwallowSoftToy = config.Bind("ToyTweaks_Bool_CanSwallowSoftToy", false);
             oneHandSoftToy = config.Bind("ToyTweaks_Bool_OneHandSoftToy", false);
@@ -55,14 +60,16 @@ namespace ToyTweaks
             var ballToy = new OpTab(this, Custom.rainWorld.inGameTranslator.Translate("BallToy"));
             var softToy = new OpTab(this, Custom.rainWorld.inGameTranslator.Translate("SoftToy"));
             var weirdToy = new OpTab(this, Custom.rainWorld.inGameTranslator.Translate("WeirdToy"));
-            Tabs = new[] { spinToy, ballToy, softToy, weirdToy };
+            Tabs = new[] { general, spinToy, ballToy, softToy, weirdToy };
 
             // 通用选单
             OpContainer generalContainer = new OpContainer(new Vector2(0, 0));
             general.AddItems(generalContainer);
             UIelement[] UIArrayElements = new UIelement[]
             {
-                new OpLabel(new Vector2(250f, 535f), new Vector2(100f, 45f), "General Configs", FLabelAlignment.Center, true, null)
+                new OpLabel(new Vector2(250f, 535f), new Vector2(100f, 45f), "General Configs", FLabelAlignment.Center, true, null),
+                new OpCheckBox(keyItemAllToys, 230f, 460f),
+                new OpLabel(290f, 460f, Custom.rainWorld.inGameTranslator.Translate("Toys as key items")),
             };
             general.AddItems(UIArrayElements);
             // 陀螺选单
@@ -106,8 +113,7 @@ namespace ToyTweaks
         public override void Update()
         {
             base.Update();
-            Tabs[3].colorButton = Color.green;
-            Tabs[3].colorCanvas = Color.green;
+            Tabs[0].colorButton = Color.green;
         }
     }
 }

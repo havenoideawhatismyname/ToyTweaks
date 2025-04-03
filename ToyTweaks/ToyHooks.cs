@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Watcher;
 using MoreSlugcats;
 using System.Globalization;
+using UnityEngine;
 
 namespace ToyTweaks
 {
@@ -21,7 +22,7 @@ namespace ToyTweaks
             On.Watcher.UrbanToys.SoftToy.Update += SoftToy_Update;
             On.Watcher.UrbanToys.WeirdToy.DrawSprites += WeirdToy_DrawSprites;
             On.Watcher.UrbanToys.WeirdToy.Update += WeirdToy_Update;
-        }        
+        }
 
         private static void SpinToy_DrawSprites(On.Watcher.UrbanToys.SpinToy.orig_DrawSprites orig, UrbanToys.SpinToy self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, UnityEngine.Vector2 camPos)
         {
