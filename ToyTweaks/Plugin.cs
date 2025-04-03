@@ -14,7 +14,7 @@ namespace ToyTweaks
         public static RemixMenu optionsMenuInstance;
         public void OnEnable()
         {
-            On.RainWorld.OnModsInit += RainWorld_OnModsInit;
+            On.RainWorld.OnModsInit += RainWorld_OnModsInit;            
         }
 
         private void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
@@ -27,6 +27,6 @@ namespace ToyTweaks
             //Remix菜单
             optionsMenuInstance = new RemixMenu(this);
             MachineConnector.SetRegisteredOI("fanc39cat.toytweaks", optionsMenuInstance);
-        }
+        }      
     }
 }

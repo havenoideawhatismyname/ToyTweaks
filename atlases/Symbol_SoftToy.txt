@@ -1,0 +1,20 @@
+{"frames": {
+
+"Symbol_SoftToy.png":
+{
+	"frame": {"x":0,"y":0,"w":29,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+	"sourceSize": {"w":29,"h":30}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Symbol_SoftToy.png",
+	"format": "RGBA8888",
+	"size": {"w":29,"h":30},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7494b5d29c487c1790f8d223bd363d8e:f9f6e2d9918e1689bf0443e878ea0f09:a686d581423f976c24bc0a9212356b9b$"
+}
+}

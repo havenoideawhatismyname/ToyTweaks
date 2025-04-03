@@ -1,0 +1,20 @@
+{"frames": {
+
+"Symbol_WeirdToy.png":
+{
+	"frame": {"x":0,"y":0,"w":21,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":14},
+	"sourceSize": {"w":21,"h":14}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Symbol_WeirdToy.png",
+	"format": "RGBA8888",
+	"size": {"w":21,"h":14},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cde0ecb402d9e6924d42ea1c89a16168:3acd7942a6b70b76216e8612fada36d5:fadf10f0ee5e340ceded18cec0a6eb29$"
+}
+}
