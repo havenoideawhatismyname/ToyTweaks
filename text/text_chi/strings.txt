@@ -1,0 +1,8 @@
+Specific|详细
+General Configs|通用设定
+Specific Configs|详细设定
+
+Toys as key items|设置玩具为关键物品
+Give all toys unique icons|应用玩具自定义图标
+Allow player to pick up all toys with one hand|单手拿起所有玩具
+Allow player to swallow all toys|胃袋储存所有玩具

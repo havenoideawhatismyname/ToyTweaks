@@ -24,7 +24,7 @@ namespace ToyTweaks
             ToyHooks.Hooks();
             AbstractPhysicalObjectHooks.Hooks();
             ItemSymbolHooks.Hooks();
-            //Remix菜单
+            // Remix菜单
             optionsMenuInstance = new RemixMenu(this);
             MachineConnector.SetRegisteredOI("fanc39cat.toytweaks", optionsMenuInstance);
         }      
