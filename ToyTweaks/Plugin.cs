@@ -9,7 +9,7 @@ namespace ToyTweaks
 {
 
     [BepInPlugin("fanc39cat.toytweaks", "ToyTweaks", "0.1.0")]
-    public class ToyTweaks : BaseUnityPlugin
+    public class Plugin : BaseUnityPlugin
     {
         public static RemixMenu optionsMenuInstance;
         public void OnEnable()

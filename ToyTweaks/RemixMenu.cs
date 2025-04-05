@@ -16,7 +16,7 @@ namespace ToyTweaks
         public readonly Configurable<bool> keyItemAllToys;
         public readonly Configurable<bool> customIcons;
         public readonly Configurable<bool> oneHandAllToys;
-        public readonly Configurable<bool> canSwallowAllToy;
+        public readonly Configurable<bool> canSwallowAllToys;
         // 毛绒
         public readonly Configurable<bool> canSwallowSoftToy;
         public readonly Configurable<bool> oneHandSoftToy;
@@ -34,13 +34,13 @@ namespace ToyTweaks
         public readonly Configurable<bool> oneHandWeirdToy;
         public FSprite WeirdToyIcon;
 
-        public RemixMenu(ToyTweaks toyTweaks)
+        public RemixMenu(Plugin toyTweaks)
         {
             // 总选单
             keyItemAllToys = config.Bind("ToyTweaks_Bool_KeyItemAllToys", true);
             customIcons = config.Bind("ToyTweaks_Bool_CustomIcons", true);
             oneHandAllToys = config.Bind("ToyTweaks_Bool_OneHandAllToys", false);
-            canSwallowAllToy = config.Bind("ToyTweaks_Bool_CanSwallowAllToy", false);
+            canSwallowAllToys = config.Bind("ToyTweaks_Bool_CanSwallowAllToy", false);
             // 毛绒
             canSwallowSoftToy = config.Bind("ToyTweaks_Bool_CanSwallowSoftToy", false);
             oneHandSoftToy = config.Bind("ToyTweaks_Bool_OneHandSoftToy", false);
@@ -74,7 +74,7 @@ namespace ToyTweaks
                 new OpLabel(140, 350f, Custom.rainWorld.inGameTranslator.Translate("Give all toys unique icons")),
                 new OpCheckBox(oneHandAllToys, 100, 300f),
                 new OpLabel(140, 300f, Custom.rainWorld.inGameTranslator.Translate("Allow player to pick up all toys with one hand")),
-                new OpCheckBox(canSwallowAllToy, 100, 250f),
+                new OpCheckBox(canSwallowAllToys, 100, 250f),
                 new OpLabel(140, 250f, Custom.rainWorld.inGameTranslator.Translate("Allow player to swallow all toys")),
             };
             general.AddItems(UIArrayElements);

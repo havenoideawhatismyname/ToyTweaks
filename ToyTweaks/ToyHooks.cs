@@ -30,15 +30,15 @@ namespace ToyTweaks
             if (self.slatedForDeletetion || self.room != rCam.room)
             {
                 sLeaser.CleanSpritesAndRemove();
-            }
+            }         
         }
 
         private static void SpinToy_Update(On.Watcher.UrbanToys.SpinToy.orig_Update orig, UrbanToys.SpinToy self, bool eu)
         {
             orig.Invoke(self, eu);
-            if (self.grabbedBy.Count > 0)
+            if (self.grabbedBy.Count > 0 || self.interactedWith)
             {
-                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.SpinToy)
+                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.SpinToy && Plugin.optionsMenuInstance.keyItemAllToys.Value)
                 {
                     (self.room.game.session as StoryGameSession).AddNewPersistentTracker(self.abstractPhysicalObject);
                 }
@@ -57,9 +57,9 @@ namespace ToyTweaks
         private static void BallToy_Update(On.Watcher.UrbanToys.BallToy.orig_Update orig, UrbanToys.BallToy self, bool eu)
         {
             orig.Invoke(self, eu);
-            if (self.grabbedBy.Count > 0)
+            if (self.grabbedBy.Count > 0 || self.interactedWith)
             {
-                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.BallToy)
+                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.BallToy && Plugin.optionsMenuInstance.keyItemAllToys.Value)
                 {
                     (self.room.game.session as StoryGameSession).AddNewPersistentTracker(self.abstractPhysicalObject);
                 }
@@ -78,9 +78,9 @@ namespace ToyTweaks
         private static void SoftToy_Update(On.Watcher.UrbanToys.SoftToy.orig_Update orig, UrbanToys.SoftToy self, bool eu)
         {
             orig.Invoke(self, eu);
-            if (self.grabbedBy.Count > 0)
+            if (self.grabbedBy.Count > 0 || self.interactedWith)
             {
-                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.SoftToy)
+                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.SoftToy && Plugin.optionsMenuInstance.keyItemAllToys.Value)
                 {
                     (self.room.game.session as StoryGameSession).AddNewPersistentTracker(self.abstractPhysicalObject);
                 }
@@ -99,9 +99,9 @@ namespace ToyTweaks
         private static void WeirdToy_Update(On.Watcher.UrbanToys.WeirdToy.orig_Update orig, UrbanToys.WeirdToy self, bool eu)
         {
             orig.Invoke(self, eu);
-            if (self.grabbedBy.Count > 0)
+            if (self.grabbedBy.Count > 0 || self.interactedWith)
             {
-                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.WeirdToy)
+                if (ModManager.MMF && MMF.cfgKeyItemTracking.Value && self.room.game.session is StoryGameSession && AbstractPhysicalObject.UsesAPersistantTracker(self.abstractPhysicalObject) && self.abstractPhysicalObject.type == WatcherEnums.AbstractObjectType.WeirdToy && Plugin.optionsMenuInstance.keyItemAllToys.Value)
                 {
                     (self.room.game.session as StoryGameSession).AddNewPersistentTracker(self.abstractPhysicalObject);
                 }

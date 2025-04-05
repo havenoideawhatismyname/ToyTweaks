@@ -20,21 +20,21 @@ namespace ToyTweaks
             bool result = orig.Invoke(self, testObj);
             if (ModManager.Watcher)
             {
-                if (testObj is UrbanToys.SpinToy)
+                if (testObj is UrbanToys.SpinToy && (Plugin.optionsMenuInstance.canSwallowSpinToy.Value|| Plugin.optionsMenuInstance.canSwallowAllToys.Value))
                 {
                     return true;
                 }
                 else
                 {
-                    if (testObj is UrbanToys.SoftToy)
+                    if (testObj is UrbanToys.SoftToy && (Plugin.optionsMenuInstance.canSwallowSoftToy.Value || Plugin.optionsMenuInstance.canSwallowAllToys.Value))
                     {
                         return true;
                     }
-                    if (testObj is UrbanToys.WeirdToy)
+                    if (testObj is UrbanToys.WeirdToy && (Plugin.optionsMenuInstance.canSwallowWeirdToy.Value || Plugin.optionsMenuInstance.canSwallowAllToys.Value))
                     {
                         return true;
                     }
-                    if (testObj is UrbanToys.BallToy)
+                    if (testObj is UrbanToys.BallToy && (Plugin.optionsMenuInstance.canSwallowBallToy.Value || Plugin.optionsMenuInstance.canSwallowAllToys.Value))
                     {
                         return true;
                     }
@@ -52,7 +52,7 @@ namespace ToyTweaks
             Player.ObjectGrabability result = orig.Invoke(self, obj);
             if (ModManager.Watcher)
             {
-                if (obj is UrbanToys.SpinToy)
+                if (obj is UrbanToys.SpinToy && (Plugin.optionsMenuInstance.oneHandSpinToy.Value || Plugin.optionsMenuInstance.oneHandAllToys.Value))
                 {
                     if ((obj as UrbanToys.SpinToy).spinTimer.isFinished || obj.grabbedBy.Count != 0)
                     {
@@ -62,20 +62,23 @@ namespace ToyTweaks
                 }
                 else
                 {
-                    if (obj is UrbanToys.SoftToy)
+                    if (obj is UrbanToys.SoftToy && (Plugin.optionsMenuInstance.oneHandSoftToy.Value || Plugin.optionsMenuInstance.oneHandAllToys.Value))
                     {
                         return Player.ObjectGrabability.OneHand;
                     }
-                    if (obj is UrbanToys.WeirdToy)
+                    if(obj is UrbanToys.WeirdToy && (Plugin.optionsMenuInstance.oneHandWeirdToy.Value || Plugin.optionsMenuInstance.oneHandAllToys.Value))
                     {
                         return Player.ObjectGrabability.OneHand;
                     }
-                    if (obj is UrbanToys.BallToy)
+                    if (obj is UrbanToys.BallToy && (Plugin.optionsMenuInstance.oneHandBallToy.Value || Plugin.optionsMenuInstance.oneHandAllToys.Value))
                     {
                         return Player.ObjectGrabability.OneHand;
                     }
-                    return result;
-                }
+                    else
+                    {
+                        return result;
+                    }
+                }                
             }
             else
             {
