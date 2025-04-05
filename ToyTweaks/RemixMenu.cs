@@ -120,25 +120,25 @@ namespace ToyTweaks
                 // 陀螺
                 new OpLabel(100, 450f, Custom.rainWorld.inGameTranslator.Translate("~SpinToy~"),true),
                 new OpCheckBox(oneHandSpinToy, 70, 400f),
-                new OpLabel(110, 400f, Custom.rainWorld.inGameTranslator.Translate("Allow player to pick up SpinToy with one hand")),
+                new OpLabel(110, 400f, Custom.rainWorld.inGameTranslator.Translate("Pick up SpinToy with one hand")),
                 new OpCheckBox(canSwallowSpinToy, 70, 350f),
                 new OpLabel(110, 350f, Custom.rainWorld.inGameTranslator.Translate("Allow player to swallow SpinToy")),
                 // 球
                 new OpLabel(100, 250f, Custom.rainWorld.inGameTranslator.Translate("~BallToy~"),true),
                 new OpCheckBox(oneHandBallToy, 70, 200f),
-                new OpLabel(110, 200f, Custom.rainWorld.inGameTranslator.Translate("Allow player to pick up BallToy with one hand")),
+                new OpLabel(110, 200f, Custom.rainWorld.inGameTranslator.Translate("Pick up BallToy with one hand")),
                 new OpCheckBox(canSwallowBallToy, 70, 150f),
                 new OpLabel(110, 150f, Custom.rainWorld.inGameTranslator.Translate("Allow player to swallow BallToy")),
                 // 毛绒
                 new OpLabel(380, 250f, Custom.rainWorld.inGameTranslator.Translate("~SoftToy~"),true),
                 new OpCheckBox(oneHandSoftToy, 350, 200f),
-                new OpLabel(390, 200f, Custom.rainWorld.inGameTranslator.Translate("Allow player to pick up SoftToy with one hand")),
+                new OpLabel(390, 200f, Custom.rainWorld.inGameTranslator.Translate("Pick up SoftToy with one hand")),
                 new OpCheckBox(canSwallowSoftToy, 350, 150f),
                 new OpLabel(390, 150f, Custom.rainWorld.inGameTranslator.Translate("Allow player to swallow SoftToy")),
                 // 奇怪
                 new OpLabel(360, 450f, Custom.rainWorld.inGameTranslator.Translate("~WeirdToy~"),true),
                 new OpCheckBox(oneHandWeirdToy, 350, 400f),
-                new OpLabel(390, 400f, Custom.rainWorld.inGameTranslator.Translate("Allow player to pick up WeirdToy with one hand")),
+                new OpLabel(390, 400f, Custom.rainWorld.inGameTranslator.Translate("Pick up WeirdToy with one hand")),
                 new OpCheckBox(canSwallowWeirdToy, 350, 350f),
                 new OpLabel(390, 350f, Custom.rainWorld.inGameTranslator.Translate("Allow player to swallow WeirdToy")),
             };
