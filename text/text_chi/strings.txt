@@ -2,7 +2,25 @@ Specific|详细
 General Configs|通用设定
 Specific Configs|详细设定
 
+The configs below are general settings for all toys.|以下是针对所有玩具的通用设定
+If you want to change specific options for a particular toy, please go to the Specific tab.|若想要更改某个特定玩具的设定，请移步至“详细”选单
+
+
 Toys as key items|设置玩具为关键物品
 Give all toys unique icons|应用玩具自定义图标
 Allow player to pick up all toys with one hand|单手拿起所有玩具
 Allow player to swallow all toys|胃袋储存所有玩具
+
+~SpinToy~|~陀螺~
+~BallToy~|~弹球~
+~SoftToy~|~玩偶~
+~WeirdToy~|~奇怪的玩具~
+
+Pick up SpinToy with one hand|单手拿起陀螺
+Allow player to swallow SpinToy|胃袋储存陀螺
+Pick up BallToy with one hand|单手拿起弹球
+Allow player to swallow BallToy|胃袋储存弹球
+Pick up SoftToy with one hand|单手拿起抱枕
+Allow player to swallow SoftToy|胃袋储存抱枕
+Pick up WeirdToy with one hand|单手拿起奇怪玩具
+Allow player to swallow WeirdToy|胃袋储存奇怪玩具
